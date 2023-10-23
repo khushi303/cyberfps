@@ -81,7 +81,7 @@ const Header = () => {
             </Container>
             <Container className='mw-1140'>
                 <Row className='pt-3'>
-                    <Col lg={6} className='pt-lg-5 pt-4 d-flex align-items-lg-start align-items-center justify-content-center flex-column '>
+                    <Col lg={6} className='d-flex align-items-lg-start align-items-center justify-content-center flex-column'>
                         <img src={Cyberhead} alt="cyberheadimg" />
                         <p className='ff-audiowide fs-lg fw-normal text-white pt-3 pb-5 mb-0'>Web3 Gaming Reimagined</p>
                         <div className='d-flex align-items-center gap-3 '>
