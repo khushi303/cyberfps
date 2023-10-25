@@ -17,12 +17,12 @@ const Header = () => {
     }
     return (
         <div className='bg-header'>
-            <Container className='custom-container'>
+            <Container data-aos="zoom-in" data-aos-duration="800" className='custom-container'>
                 <div className='d-flex align-items-center justify-content-between py-3'>
                     <div data-aos="zoom-in" data-aos-duration="800" className='cur_pointer'>
                         <img src={Cyberlogo} alt="header-logo" className='mw-120 w-100' />
                     </div>
-                    <ul data-aos="zoom-in" data-aos-duration="800"
+                    <ul
                         id='nicon'
                         className="d-flex gap-3 mb-0 flex-column list-unstyled flex-lg-row justify-content-center align-items-center mobile_view z_index_3"
                     >

@@ -645,7 +645,7 @@
     width: 100%;
     min-height: 100vh;
     background-color: black;
-    transition: 300ms linear;
+    transition: all .3s linear;
   }
 
   /* .line,
