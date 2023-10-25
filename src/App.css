@@ -8,6 +8,11 @@
   list-style-type: none !important;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 /*---------------Root----------------*/
 :root {
   --fs-sm: 16px;
