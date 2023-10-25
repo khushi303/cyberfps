@@ -16,7 +16,8 @@
   --fs-xl: 64px;
 }
 
-.mw-1140 {
+
+.custom-container {
   max-width: 1140px !important;
 }
 
@@ -114,7 +115,7 @@
 
 .bg-dotted1 {
   background-image: url(./assets/images/dotted-backgrund-faq.png);
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -163,7 +164,7 @@
   position: relative;
   color: white;
   font-family: 'Montserrat' sans-serif;
-  font-size: var(--fs-md);
+  font-size: var(--fs-md) !important;
   font-weight: 600;
   flex-shrink: 0;
   background-color: transparent !important;
@@ -256,7 +257,7 @@
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 24px !important;
+  font-size: 24px;
   font-weight: 600 !important;
   color: white !important;
   text-align: left;
@@ -281,6 +282,15 @@
 
 .accordion-item:hover {
   box-shadow: 0px 0px 1em 0px #1EADB6;
+}
+
+.link {
+  border: 2px solid #fff;
+  display: flex;
+  padding: 1px 16px;
+  -webkit-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  transition: all .3s linear;
 }
 
 .bg-footer {
@@ -347,11 +357,12 @@
   padding: 4px 22px;
 }
 
-.link {
-  background-image: url('./assets/images/head-rectangle.png');
-  background-position: left right;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.img_hover {
+  transition: all .2s linear;
+}
+
+.img_hover:hover {
+  transform: scale(1.04);
 }
 
 .cur_pointer {
@@ -381,28 +392,111 @@
   border-radius: 7px;
   background: #1EADB6;
   border: 2px solid #1EADB6;
-  padding: 12px 36px;
+  padding: 8px 28px !important;
   transition: all .2s linear;
 }
 
 .btn-get:hover {
   border: 2px solid #1EADB6;
-  color: white !important;
-  background: transparent;
+  box-shadow: 0px 2px 5px 5px #1eacb653;
 }
 
 .btn-learn {
   border-radius: 7px;
   border: 2px solid #1EADB6;
   background: transparent;
-  padding: 10px 30px !important;
+  padding: 8px 28px !important;
   transition: all .2s linear;
+}
+
+.gameplay_btn {
+  transition: 0.3s linear !important;
+}
+
+.gameplay_btn:hover {
+  transform: scale(1.2) !important;
+}
+
+.btn-cross {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background: var(--text-white);
+  border-radius: 50%;
+  border: none;
+}
+
+.play_btn {
+  position: absolute;
+  transform: translateY(0);
+  cursor: pointer !important;
+}
+
+.h-500 {
+  height: 500px !important;
+}
+
+.right-1 {
+  right: -1%;
+}
+
+.top-3 {
+  top: -3%;
+}
+
+.btn-cross {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background: #1EADB6;
+  border-radius: 50%;
+  border: none;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background: #1EADB6 !important;
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
+.btn-close {
+  --bs-btn-close-focus-shadow: none !important;
+}
+
+.modal-dialog {
+  max-width: 1320px !important;
+  padding: 30px !important;
+}
+
+.modal-content {
+  padding: 5px !important;
+  max-height: 400px !important;
+  max-height: 530px !important;
+}
+
+.pt-modal {
+  padding-top: 70px;
+}
+
+.pt_gameplay {
+  padding-top: 116px;
 }
 
 .btn-learn:hover {
   border: 2px solid #1EADB6;
-  color: black !important;
-  background: #1EADB6;
+  box-shadow: 0px 2px 5px 5px #1eacb653;
 }
 
 .teal-line::after {
@@ -431,6 +525,10 @@
   .btn-get {
     padding: 12px 36px !important;
   }
+
+  .btn-learn {
+    padding: 12px 36px !important;
+  }
 }
 
 @media (max-width:576px) {
@@ -439,6 +537,11 @@
     --fs-md: 17px;
     --fs-lg: 28px;
     --fs-xl: 30px;
+  }
+
+  .gameplay_btn {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -506,8 +609,8 @@
     background: #1EADB6;
     width: 179px;
     height: 2px;
-    left: -7%;
-    bottom: 5%;
+    left: -15px;
+    bottom: -12%;
   }
 }
 
@@ -554,6 +657,10 @@
     border-radius: 5px;
     transition: 300ms linear;
   } */
+
+  .overflow_hidden {
+    overflow: hidden !important;
+  }
 
   .cross .line {
     transform: rotate(50deg) translate(18px, 17px);

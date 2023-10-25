@@ -85,3 +85,36 @@ export const Instaicon = () => {
         </a>
     )
 }
+export const Gplaybtn = () => {
+    return (
+        <svg
+            className="gameplay_btn"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle
+                cx="32.0007"
+                cy="32.0861"
+                r="28.6066"
+                stroke="#1EADB6"
+                strokeWidth="2"
+            />
+            <circle
+                opacity="0.2"
+                cx="32.0002"
+                cy="32.0861"
+                r="29.7213"
+                stroke="#1EADB6"
+                strokeWidth="4"
+            />
+            <path
+                d="M28.2416 23.1292L39.8769 32.086L28.2416 41.0428L28.2416 23.1292Z"
+                stroke="#1EADB6"
+                strokeWidth="2"
+            />
+        </svg>
+    )
+}

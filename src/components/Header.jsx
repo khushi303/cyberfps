@@ -17,12 +17,12 @@ const Header = () => {
     }
     return (
         <div className='bg-header'>
-            <Container className='mw-1140'>
+            <Container className='custom-container'>
                 <div className='d-flex align-items-center justify-content-between py-3'>
-                    <div className='cur_pointer'>
+                    <div data-aos="zoom-in" data-aos-duration="800" className='cur_pointer'>
                         <img src={Cyberlogo} alt="header-logo" className='mw-120 w-100' />
                     </div>
-                    <ul
+                    <ul data-aos="zoom-in" data-aos-duration="800"
                         id='nicon'
                         className="d-flex gap-3 mb-0 flex-column list-unstyled flex-lg-row justify-content-center align-items-center mobile_view z_index_3"
                     >
@@ -67,7 +67,7 @@ const Header = () => {
                             </Link>
                         </li>
                     </ul>
-                    <div className='d-flex align-items-center justify-content-center pt-3 pb-2 gap-sm-3 gap-2 position-relative z-2'>
+                    <div data-aos="zoom-in" data-aos-duration="800" className='d-flex align-items-center justify-content-center pt-3 pb-2 gap-sm-3 gap-2 position-relative z-2'>
                         <Tweeticon />
                         <Instaicon />
                         <Discordicon />
@@ -79,17 +79,17 @@ const Header = () => {
                     </div>
                 </div>
             </Container>
-            <Container className='mw-1140'>
+            <Container className='custom-container'>
                 <Row className='pt-3'>
-                    <Col lg={6} className='d-flex align-items-lg-start align-items-center justify-content-center flex-column'>
+                    <Col data-aos="fade-down" data-aos-duration="1500" lg={6} className='d-flex align-items-lg-start align-items-center justify-content-center flex-column'>
                         <img src={Cyberhead} alt="cyberheadimg" />
-                        <p className='ff-audiowide fs-lg fw-normal text-white pt-3 pb-5 mb-0'>Web3 Gaming Reimagined</p>
+                        <p className='ff-audiowide fs-lg fw-normal text-white pt-3 pb-5 mb-0 text-md-start text-center'>Web3 Gaming Reimagined</p>
                         <div className='d-flex align-items-center gap-3 '>
                             <button className='btn-get ff-audiowide fs-sm fw-normal text-black text-nowrap'>Get Started</button>
                             <button className='btn-learn ff-audiowide fs-sm fw-normal text-white text-nowrap'>Learn More</button>
                         </div>
                     </Col>
-                    <Col lg={6} className='mt-lg-0 mt-5'>
+                    <Col data-aos="fade-down" data-aos-duration="1500" lg={6} className='mt-lg-0 mt-5'>
                         <img src={Freeimg} alt="Freefireimg" className='w-100' />
                     </Col>
                 </Row>
