@@ -12,7 +12,7 @@ const Accsection = () => {
                     <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" className="fw-normal ff-audiowide text-white text-center pt-4 fs-xl mb-0 position-relative teal-line2">
                         Faq
                     </h3>
-                    <Accordion data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1300" className="mx-auto pb-xl-5 mt-lg-5 pt-lg-5 pt-4">
+                    <Accordion data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1300" className="mx-auto pb-xl-5 mt-lg-5 pt-lg-5 pt-5">
                         <Accordion.Item eventKey="0">
                             <Accrdnradius_bttm />
                             <Accordion.Header className="ff-Montserrat fw-semibold fs-md4 text-white Accordion_Header">
